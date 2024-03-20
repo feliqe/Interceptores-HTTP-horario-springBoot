@@ -1,0 +1,17 @@
+Interceptores HTTP hora de acceso al cliente
+
+- establecer horario a la atención del cliente.
+- por medio de un método extraemos la información de la hora actual y se realiza la condición si se cumple se mostrara un mensaje indicando que es un return true.
+- se realiza una mapeo para mostrar cuando el return es false, por que no cumple con la condición del método.
+
+-se define horario de apertura y de cierre, se define en la siguiente ruta con los campos agregados
+    -application.properties
+        config.calendar.open=14
+        config.calendar.close=17
+    -se puede modificar la hora para que nos muestre el mensaje de true cuando se cumpla la condición y cuando sea false que no cumple la condición.
+
+ Order de codification
+- application.properties
+- AppController
+- CalendarInterceptor
+- MvcConfig
